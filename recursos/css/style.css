@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;/* TODO buscar una font-family mas bonita jajaja */
+    margin: 0;
+    padding: 0;
+    background-color: #939393;
+    padding-top: 60px; 
+}
+.contenedor {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 10px; 
+}
+
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 1700px;
+        padding: 0 20px;
+    }
+}
+
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navecacion {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.swich {
+    margin-left: auto;
+}
+
+nav button {
+    background-color: #555;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 3px solid #555;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px; 
+    }
+    nav {
+        padding: 8px;
+        gap: 10px;
+    }
+    
+    nav button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .swich {
+        position: static; 
+        margin-left: auto;
+    }
+}
+@media (max-width: 480px) {
+
+    body {
+        padding-top: 80px; 
+    }
+    nav {
+        flex-wrap: wrap; 
+        gap: 5px;
+    }
+    
+    nav button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .navecacion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+        margin-top: 30px;
+    }
+    
+    .footer p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 12px;
+        margin-top: 20px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+    }
+}

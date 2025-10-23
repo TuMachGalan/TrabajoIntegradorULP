@@ -4,144 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./recursos/css/style.css">
+    <link rel="stylesheet" href="./recursos/css/stylesIndex.css">
+    <link rel="stylesheet" href="./recursos/css/stylesCarrusel.css">
     
 
     <title>Venta de Vehiculos</title>
-    <style>
-            /* Estilos generales */
-        body{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #939393;
-        }
-        nav{
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            display: flex;
-            width: 100%;
-            position: fixed;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav button{
-            background-color: #555;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        nav a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .swich{
-            position: absolute;
-            right: 4%;
-            top: 10px;
-            
-        }
-
-        .footer{
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-            /* Estilos INICIO exlusive pa */
-        .carrusel{
-            display: flex;
-            overflow-x: auto; 
-            gap: 10px;
-            padding: 0px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-        }
-        .carrusel-item{
-            min-width: 300px;
-            
-            flex: none;
-        }
-        .carrusel-item img{
-            width: 100%;
-            max-height: 400px;
-            border-radius: 10px;
-        }
-        .inicio{
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-        }
-        .info{
-            margin: 20px;
-            padding: 20px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-        }
-        .info ul{
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        .info li{
-            margin-bottom: 10px;
-        }
-        .contenedor{
-            max-width: 1700px;
-            margin: auto;
-        }
-
-
-    </style>
 </head>
 <body>
    
     <nav>
-         <div class="navecacion">
+        <div class="navecacion">
             <button><a href="./index.html">Inicio</a></button>
-            <button><a href="./productos.html">Ver Vehiculos</a></button>
+            <button><a href="./productos.html">Ver Vehículos</a></button>
             <button><a href="./contacto.html">Contacto</a></button>
             <button><a href="./nosotros.html">Nosotros</a></button>
-            
-                <button class="swich"><i>🇦🇷 / 🇨🇳</i></button>
-                
-            
+            <button class="swich"><i>🇦🇷 / 🇨🇳</i></button>
         </div>
-
-    </nav>  
+    </nav>
 
 
      
 
     <div class="contenedor">
-        <div class="carrusel">
-            <div class="carrusel-item">
-                <img src="./recursos/img/auto1.jpg" alt="Auto 1">
+        <div class="carrusel-contenedor">
+            <div class="carrusel">
+                <div class="carrusel-item">
+                    <img src="./recursos/img/auto1.jpg" alt="Auto 1">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./recursos/img/auto2.jpg" alt="Auto 2">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./recursos/img/auto3.jpg" alt="Auto 3">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./recursos/img/moto1.jpg" alt="Moto 1">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./recursos/img/moto2.jpg" alt="Moto 2">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./recursos/img/moto3.jpg" alt="Moto 3">
+                </div>
             </div>
-            <div class="carrusel-item">
-                <img src="./recursos/img/auto2.jpg" alt="Auto 2">
-            </div>
-            <div class="carrusel-item">
-                <img src="./recursos/img/auto3.jpg" alt="Auto 2">
-            </div>
-            <div class="carrusel-item">
-                <img src="./recursos/img/moto1.jpg" alt="Moto 3">
-            </div>
-            <div class="carrusel-item">
-                <img src="./recursos/img/moto2.jpg" alt="Moto 4">
-            </div>
-            <div class="carrusel-item">
-                <img src="./recursos/img/moto3.jpg" alt="Moto 4">
-            </div>
+            <button class="carrusel-btn carrusel-anterior">‹</button>
+            <button class="carrusel-btn carrusel-siguiente">›</button>
         </div>
+
+        
         <div class="inicio">
             <h1>Bienvenido a la Venta de Vehiculos</h1>
             <p>Encuentra el vehiculo de tus sueños con nosotros. Ofrecemos una amplia variedad de autos, camionetas y motocicletas para todos los gustos y presupuestos. Navega por nuestro catálogo y contáctanos para más información.</p>
@@ -159,12 +69,13 @@
             </ul>
 
         </div>
+
     </div>
         <footer class="footer">
             <p>&copy; 2024 Venta de Vehiculos. Todos los derechos reservados.</p>
         </footer>
     
-
+    <script src="./recursos/js/carrusel.js"></script>    
     <script src="./recursos/js/myScript.js"></script>
 </body>
 </html>

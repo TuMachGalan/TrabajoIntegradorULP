@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalItems = items.length;
 
         function actualizarCarrusel() {
-            const desplazamiento = -indiceActual * 100;
-            carrusel.style.transform = `translateX(${desplazamiento}%)`;
+            const desplazamiento = indiceActual * 100;
+            carrusel.style.transform = `translateX(-${desplazamiento}%)`;
         }
 
         function siguiente() {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         prevBtn.addEventListener('click', anterior);
         nextBtn.addEventListener('click', siguiente);
 
-        let intervalo = setInterval(siguiente, 7000);
+        let intervalo = setInterval(siguiente, 5000);
 
         contenedorCarrusel.addEventListener('mouseenter', () => {
             clearInterval(intervalo);

@@ -24,3 +24,42 @@
         font-size: 1.5em;
     }
 }
+.info h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.info p{
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.info ul{
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.info ul li{
+    margin-bottom: 15px;
+    line-height: 1.5;
+    list-style: none;
+    
+}
+li img {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px; /* Espacio entre el icono y el texto */
+  }
+
+  @media (min-width: 992px) {
+    .info {
+        margin: 40px auto;
+        padding: 30px;
+        max-width: 1200px;
+        font-size: 20px;
+    }
+    .inicio {
+        margin: 40px auto;
+        padding: 30px;
+        max-width: 1200px;
+        font-size: 20px;
+    }
+  }

@@ -1,0 +1,136 @@
+/* Estilos para la sección de productos */
+.productos {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-vehiculos {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo-vehiculos h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background-color: #000e8bb5;
+  border-radius: 50px;
+}
+
+.vehiculos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.vehiculo-stock {
+  flex: 1 1 calc(33.333% - 40px);
+  min-width: 200px;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehiculo-stock:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.vehiculo-stock img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.vehiculo-stock h2 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333;
+}
+
+.vehiculo-stock p {
+  font-size: 1.3em;
+  margin: 15px 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.vehiculo-stock button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.vehiculo-stock button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .vehiculo-stock {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .productos {
+    padding: 15px;
+  }
+
+  .categorias h1 {
+    font-size: 3em;
+  }
+
+  .vehiculo-stock {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
+    padding: 20px;
+    margin: 5px;
+  }
+
+  .vehiculo-stock img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vehiculo-stock {
+    flex: 1 1 100%;
+    min-width: 280px;
+    margin: 10px 0;
+  }
+
+  .vehiculos {
+    gap: 15px;
+  }
+
+  .vehiculo-stock img {
+    height: 160px;
+  }
+
+  .vehiculo-stock h2 {
+    font-size: 1.3em;
+  }
+
+  .vehiculo-stock p {
+    font-size: 1.2em;
+  }
+}

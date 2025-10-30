@@ -1,187 +1,194 @@
 body {
-    font-family: Arial, sans-serif;/* TODO buscar una font-family mas bonita jajaja */
-    margin: 0;
-    padding: 0;
-    background-color: #939393;
-    padding-top: 60px; 
+  font-family: Arial, sans-serif; /* TODO buscar una font-family mas bonita jajaja */
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+  padding-top: 60px;
 }
 .contenedor {
-    max-width: 100%;
-    margin: auto;
-    padding: 0 10px; 
+  max-width: 100%;
+  margin: auto;
+  padding: 0 10px;
 }
 
 @media (min-width: 1200px) {
-    .contenedor {
-        max-width: 1700px;
-        padding: 0 20px;
-    }
+  .contenedor {
+    max-width: 1700px;
+    padding: 0 20px;
+  }
 }
 
-
 nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    display: flex;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    gap: 20px;
-    z-index: 1000;
-    box-sizing: border-box;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .navecacion {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .swich {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 nav button {
-    background-color: #555;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    white-space: nowrap; 
+  background-color: #555;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.navecacion a button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
 }
-
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
-    border-top: 3px solid #555;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 3px solid #555;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+  nav {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  nav button {
+    padding: 8px 15px;
     font-size: 14px;
-}
+  }
 
-@media (max-width: 768px) {
-    body {
-        padding-top: 70px; 
-    }
-    nav {
-        padding: 8px;
-        gap: 10px;
-    }
-    
-    nav button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-    
-    .swich {
-        position: static; 
-        margin-left: auto;
-    }
+  .swich {
+    position: static;
+    margin-left: auto;
+  }
 }
 @media (max-width: 480px) {
+  body {
+    padding-top: 80px;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 
-    body {
-        padding-top: 80px; 
-    }
-    nav {
-        flex-wrap: wrap; 
-        gap: 5px;
-    }
-    
-    nav button {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-    
-    .navecacion {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-    }
-    
+  nav button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 
+  .navecacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 @media (max-width: 768px) {
-    .footer {
-        padding: 15px;
-        margin-top: 30px;
-    }
-    
-    .footer p {
-        font-size: 13px;
-    }
+  .footer {
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
-    .footer {
-        padding: 12px;
-        margin-top: 20px;
-    }
-    
-    .footer p {
-        font-size: 12px;
-    }
+  .footer {
+    padding: 12px;
+    margin-top: 20px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
 }
 
- /* Estilos para la sección "Nosotros" */
+/* Estilos para la sección "Nosotros" */
 
 .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .contenido-nosotros {
-    max-width: 800px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contenido-nosotros h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .contactoBtn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .contacto a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .contacto:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+.categorias h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contactoBtn a {
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }

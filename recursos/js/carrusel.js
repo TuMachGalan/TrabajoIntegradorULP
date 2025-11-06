@@ -49,7 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const switchBtn = document.querySelector(".swich");
   
     switchBtn.addEventListener("click", function () {
+<<<<<<< HEAD
       document.body.classList.toggle("idioma-chino");
+=======
+      // Seleccionar el body y toggle una clase
+      document.body.classList.toggle("idioma-chino");
+      
+>>>>>>> 7000cd6be93172be0a43f963ba88aadbb96a35ea
       // Cambiar banderas
       const switchText = switchBtn.querySelector("i");
       switchText.textContent = document.body.classList.contains("idioma-chino") ? "🇨🇳 / 🇦🇷" : "🇦🇷 / 🇨🇳";});  

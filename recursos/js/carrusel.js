@@ -40,14 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     actualizarCarrusel();
   }
-
-
-
-
     //coso pa el chino cochino
-
     const switchBtn = document.querySelector(".swich");
-  
+ 
     switchBtn.addEventListener("click", function () {
       document.body.classList.toggle("idioma-chino");
       

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (contenedorCarrusel) {
     const carrusel = contenedorCarrusel.querySelector(".carrusel");
-    const items = carrusel.querySelectorAll(".carrusel-item");
+    const items = Array.from(carrusel.querySelectorAll(".carrusel-item"));
     const prevBtn = contenedorCarrusel.querySelector(".carrusel-anterior");
     const nextBtn = contenedorCarrusel.querySelector(".carrusel-siguiente");
 
@@ -40,4 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     actualizarCarrusel();
   }
-});
+
+
+
+
+    //coso pa el chino cochino
+
+    const switchBtn = document.querySelector(".swich");
+  
+    switchBtn.addEventListener("click", function () {
+      // Seleccionar el body y toggle una clase
+      document.body.classList.toggle("idioma-chino");
+      
+      // Cambiar banderas
+      const switchText = switchBtn.querySelector("i");
+      switchText.textContent = document.body.classList.contains("idioma-chino") ? "🇨🇳 / 🇦🇷" : "🇦🇷 / 🇨🇳";});  
+  });

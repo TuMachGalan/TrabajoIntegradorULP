@@ -192,3 +192,14 @@ nav button {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+.idioma-chino .chino[data-es]::after {
+  content: attr(data-cn);
+}
+
+.idioma-chino .chino[data-es] {
+  font-size: 0;
+}
+
+.idioma-chino .chino[data-es]::after {
+  font-size: initial;
+}

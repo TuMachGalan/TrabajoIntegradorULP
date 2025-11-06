@@ -12,10 +12,10 @@
   <body>
     <nav>
       <div class="navecacion">
-        <a href="./index.html"> <button>Inicio</button></a>
-        <a href="./productos.html"> <button>Ver Vehículos</button></a>
-        <a href="./contacto.html"><button>Contacto</button></a>
-        <a href="./nosotros.html"><button>Nosotros</button></a>
+        <a href="./index.html"> <button class="chino"  data-es="Inicio" data-cn="首页">Inicio</button></a>
+        <a href="./productos.html"> <button class="chino" data-es="Ver Vehículos" data-cn="查看车辆">Ver Vehículos</button></a>
+        <a href="./contacto.html"><button class="chino" data-es="Contacto" data-cn="联系我们" >Contacto</button></a>
+        <a href="./nosotros.html"><button class="chino" data-es="Nosotros" data-cn="关于我们">Nosotros</button></a>
         <button class="swich"><i>🇦🇷 / 🇨🇳</i></button>
       </div>
     </nav>
@@ -47,8 +47,12 @@
       </div>
 
       <div class="inicio">
-        <h1>Bienvenido a la Venta de Vehiculos</h1>
-        <p>
+        <h1 class="chino" data-es="Bienvenido a la Venta de Vehiculos" data-cn="欢迎来到车辆销售">Bienvenido a la Venta de Vehiculos</h1>
+        <p class="chino" data-es="Encuentra el vehiculo de tus sueños con nosotros. Ofrecemos una amplia
+        variedad de autos, camionetas y motocicletas para todos los gustos y
+        presupuestos. Navega por nuestro catálogo y contáctanos para más
+        información."
+         data-cn="与我们一同寻找您梦想的车辆。我们提供各种汽车、卡车和摩托车，满足所有品味和预算。浏览我们的目录并联系我们获取更多信息。">
           Encuentra el vehiculo de tus sueños con nosotros. Ofrecemos una amplia
           variedad de autos, camionetas y motocicletas para todos los gustos y
           presupuestos. Navega por nuestro catálogo y contáctanos para más
@@ -57,38 +61,51 @@
       </div>
 
       <div class="info">
-        <h2>¿Por qué elegirnos?</h2>
+        <h2 class="chino" data-es="¿Por qué elegirnos?" data-cn="为什么选择我们？">¿Por qué elegirnos?</h2>
         <ul>
           <li>
             <img
               src="./recursos/icon/wheel.png"
               alt="rueda"
               srcset=""
-            />Variedad de vehículos: Autos, camionetas y motocicletas.
+            /><span class="chino" data-es="Variedad de vehículos: Autos, camionetas y motocicletas."
+                data-cn="各种车辆：汽车、卡车和摩托车。" >Variedad de vehículos: Autos, camionetas y motocicletas.</span>
+              
           </li>
           <li>
-            <img src="./recursos/icon/wheel.png" alt="rueda" srcset="" />Precios
-            competitivos y financiamiento disponible.
-          </li>
-          <li>
-            <img
-              src="./recursos/icon/wheel.png"
-              alt="rueda"
-              srcset=""
-            />Asesoramiento personalizado para encontrar el vehículo ideal.
+            <img src="./recursos/icon/wheel.png" alt="rueda" srcset="" />
+            <span class="chino" data-es="Precios competitivos y financiamiento disponible."
+                data-cn="具有竞争力的价格和可用的融资选项。"
+            >Precios competitivos y financiamiento disponible.</span>
           </li>
           <li>
             <img
               src="./recursos/icon/wheel.png"
               alt="rueda"
               srcset=""
-            />Servicio postventa y garantía en todos nuestros vehículos.
+            />
+            <span class="chino" data-es="Asesoramiento personalizado para encontrar el vehículo ideal."
+                data-cn="个性化建议，帮助您找到理想的车辆。">
+              Asesoramiento personalizado para encontrar el vehículo ideal.
+            </span>
+          </li>
+          <li>
+            <img
+              src="./recursos/icon/wheel.png"
+              alt="rueda"
+              srcset=""
+            />
+              <span class="chino" data-es="Servicio postventa y soporte continuo."
+                  data-cn="售后服务和持续支持。"
+              >Servicio postventa y soporte continuo.</span>
           </li>
         </ul>
       </div>
     </div>
     <footer class="footer">
-      <p>&copy; 2024 Venta de Vehiculos. Todos los derechos reservados.</p>
+      <p class="chino" data-es="2025 Venta de Vehiculos. Todos los derechos reservados." 
+      data-cn="2025 车辆销售。保留所有权利。"
+      >&copy; 2025 Venta de Vehiculos. Todos los derechos reservados.</p>
     </footer>
 
     <script src="./recursos/js/carrusel.js"></script>

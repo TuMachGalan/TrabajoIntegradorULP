@@ -63,6 +63,17 @@
   min-height: 20px;
 }
 
+.Exito-mensaje {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #3ba805;
+  color: #dfdcdc;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  max-width: 400px;
+  text-align: center;
+}
+
 .btn-enviar {
   width: 100%;
   padding: 15px;
